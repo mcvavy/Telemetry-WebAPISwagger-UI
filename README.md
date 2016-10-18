@@ -1,7 +1,7 @@
 # Telemetry UI-WebAPI Swagger Read ME
 
 ### The onion architecture is employed in this sample application
-> ####The onion arhicture follows the inversion princple. Dependencies are inverted in ward to the doman models. An image will help clarify the intent
+> ####The onion arhicture follows the inversion princple. Dependencies are inverted in ward to the domain models. An image will help clarify the intent
 ![Image of onion architecture](https://sbrakl.files.wordpress.com/2014/11/111814_1006_onionarchit6.png?w=625)
 
 Solution Folder Structure

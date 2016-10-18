@@ -52,7 +52,8 @@ Implemented Stories are
 ### Extra addition
 
 6. Lap by Lap car Tyre temperature data visualization
-   +navigate to + navigate to localhost:<#your-port-number>/Visualizedata/Visuallize
+
+  + navigate to localhost:<#your-port-number>/Visualizedata/Visuallize <br/><br/>
    
    >This presents a visualisation for Tyre temperatures for evey lap, so an engineer can see some trends. Had enough time, so I thought I would make use of the data I have
 

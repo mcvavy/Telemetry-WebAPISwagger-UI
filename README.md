@@ -33,7 +33,7 @@ Implented Stories are
    
    + Unit tests involving the need for data to be written to/read from Queue will fail gracefully and horribly :boom: and that's a :thumbsdown:
    
-   > The following tests are will fail as a result of MessageQueue not enabled
+   > The following tests will fail as a result of MessageQueue not enabled
    
     :x: ShouldAddNewTelemetry <br/>
     :x:  ShouldReturnBadReQuestIfDuplicateTelemetryPosted

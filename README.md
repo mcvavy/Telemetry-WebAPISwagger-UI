@@ -11,7 +11,7 @@ Solution Folder Structure
 3. 03. API
 4. 04. Test
 
-Implented Stories are
+Implemented Stories are
 ---
 + Story MR-001
 + Story MR-002

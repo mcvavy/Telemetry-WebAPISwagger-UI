@@ -1,7 +1,7 @@
 # Telemetry UI-WebAPI Swagger Read ME
 
 ### The onion architecture is employed in this sample application
-> ####The onion arhicture follows the inversion princple. Dependencies are inverted in ward to the doman models. An image will help clarify the intent
+> ####The onion arhicture follows the inversion princple. Dependencies are inverted in ward to the domain models. An image will help clarify the intent
 ![Image of onion architecture](https://sbrakl.files.wordpress.com/2014/11/111814_1006_onionarchit6.png?w=625)
 
 Solution Folder Structure
@@ -11,13 +11,13 @@ Solution Folder Structure
 3. 03. API
 4. 04. Test
 
-Implented Stories are
+Implemented Stories are
 ---
 + Story MR-001
 + Story MR-002
 + Story MR-003
 + Story MR-004
-+ Story MR-007 --> Drop down for comparison
++ Story MR-007 -> Drop down for comparison & Data visualization
 
 ## Important Notes
 ---
@@ -33,7 +33,7 @@ Implented Stories are
    
    + Unit tests involving the need for data to be written to/read from Queue will fail gracefully and horribly :boom: and that's a :thumbsdown:
    
-   > The following tests are will fail as a result of MessageQueue not enabled
+   > The following tests will fail as a result of MessageQueue not enabled
    
     :x: ShouldAddNewTelemetry <br/>
     :x:  ShouldReturnBadReQuestIfDuplicateTelemetryPosted
@@ -49,5 +49,14 @@ Implented Stories are
   
 5. Make MANOR.API your start-up project and you are good to go! :heavy_check_mark:
 
+### Extra addition
+
+6. Lap by Lap car Tyre temperature data visualization
+
+  + navigate to localhost:<#your-port-number>/Visualizedata/Visuallize <br/><br/>
+   
+   >This presents a visualisation for Tyre temperatures for evey lap, so an engineer can see some trends. Had enough time, so I thought I would make use of the data I have
 
 ###HAPPY CODING!!
+
+

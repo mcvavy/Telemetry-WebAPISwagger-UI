@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Telemetry data";
+}
+
+
+<h2>@ViewBag.Title</h2>
+<div class="container-fluid" id="chart_div" style="width: 100%; height: 600px;">
+    @Html.Raw(ViewBag.chartstring)
+</div>

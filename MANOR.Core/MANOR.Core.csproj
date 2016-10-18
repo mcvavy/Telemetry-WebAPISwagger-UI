@@ -43,6 +43,7 @@
     <Compile Include="Entities\Car.cs" />
     <Compile Include="Entities\Lap.cs" />
     <Compile Include="Entities\Telemetry.cs" />
+    <Compile Include="Interfaces\IMessenger.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ITelemetry.cs" />
     <Compile Include="Interfaces\ITelemetryRepository.cs" />

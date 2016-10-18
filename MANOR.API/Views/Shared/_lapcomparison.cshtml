@@ -1,0 +1,37 @@
+﻿@model MANOR.API.ViewModels.LapViewModel
+@{
+
+    var tel1 = @Model.LapModel[0];
+    var tel2 = @Model.LapModel[1];
+    var ch1 = tel1.Car;
+    var ch2 = tel2.Car;
+}
+
+<div class="chassis-box">
+    <div class="text-left">
+        <p><span class="text-info"><b>Chasis:</b></span>@tel1.Lap.Timespan</p>
+        <p><span class="text-info"><b>Chasis:</b></span>@ch1.Chassis</p>
+        <p><span class="text-info"><b>Tyre Tempature:</b></span> @string.Format("{0}\u00B0C", ch1.TyreTemp)</p>
+        <p><span class="text-info"><b>Fuel:</b></span> @ch1.Fuel</p>
+        <p><span class="text-info"><b>Weight:</b></span>@ch1.Weight</p>
+    </div>
+</div>
+<div class="chassis-box">
+    <div class="text-left">
+        <p><span class="text-info"><b>Chasis:</b></span>@tel2.Lap.Timespan</p>
+        <p><span class="text-info"><b>Chasis:</b></span>@ch2.Chassis</p>
+        <p><span class="text-info"><b>Tyre Tempature:</b></span>@string.Format("{0}\u00B0C", ch2.TyreTemp)</p>
+        <p><span class="text-info"><b>Fuel:</b></span> @ch2.Fuel</p>
+        <p><span class="text-info"><b>Weight:</b></span>@ch2.Weight</p>
+    </div>
+</div>
+
+<div>
+    <div class="text-center panel panel-primary">
+        <div class="panel-heading">Lap time/ fuel burn Deltas</div>
+        <div class="panel-body">
+            <p><span class="text-info"><b>Detla time: </b></span>@(tel1.Lap.Timespan.Subtract(tel2.Lap.Timespan).Duration())</p>
+            <p><span class="text-info"><b>Delta fuel Burn:</b></span>@Math.Abs(ch1.Fuel - ch2.Fuel)</p>
+        </div>
+    </div>
+</div>

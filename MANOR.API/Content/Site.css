@@ -15,3 +15,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+.chassis-box {
+    display: inline-block;
+    margin: 10px;
+}
+
+.panel {
+    width: 57%;
+    margin: 0 auto;
+}

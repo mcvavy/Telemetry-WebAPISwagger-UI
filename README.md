@@ -17,7 +17,7 @@ Implemented Stories are
 + Story MR-002
 + Story MR-003
 + Story MR-004
-+ Story MR-007 --> Drop down for comparison
++ Story MR-007 -> Drop down for comparison & Data visualization
 
 ## Important Notes
 ---
@@ -49,5 +49,13 @@ Implemented Stories are
   
 5. Make MANOR.API your start-up project and you are good to go! :heavy_check_mark:
 
+### Extra addition
+
+6. Lap by Lap car Tyre temperature data visualization
+   +navigate to + navigate to localhost:<#your-port-number>/Visualizedata/Visuallize
+   
+   >This presents a visualisation for Tyre temperatures for evey lap, so an engineer can see some trends. Had enough time, so I thought I would make use of the data I have
 
 ###HAPPY CODING!!
+
+

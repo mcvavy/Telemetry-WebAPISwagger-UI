@@ -27,13 +27,6 @@ namespace MANOR.API.Controllers
                 _unitOfWork.TelemetryRepository.ListOfAllTelemetries.OrderBy(x => x.Car.Chassis).GroupBy(x => x.Lap.Number);
 
             StringBuilder strScript = new StringBuilder();
-            strScript.Append(@"<script type='text/javascript'>  
-                    google.load('visualization', '1', {packages: ['corechart']});</script>  
-  
-                    <script type='text/javascript'>  
-                    function drawVisualization() {         
-                    var data = google.visualization.arrayToDataTable([  
-                    ['Lap', 'CH1', 'CH2', 'Average'],");
 
             var mainstrings = new StringBuilder();
 
@@ -69,11 +62,7 @@ namespace MANOR.API.Controllers
             mainstrings.Remove(mainstrings.Length - 1, 1);
             strScript.Append(mainstrings).Append("]);");
 
-            strScript.Append(
-                "var options = { title : 'Tyre Temperatures for CH1 and CH2', vAxis: {title: 'Temperatures'},  chartArea: {width: 900,height: 350},hAxis: {title: 'Laps'}, seriesType: 'lines', series: {3: {type: 'line'}} };");
-            strScript.Append(
-                " var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));  chart.draw(data, options); } google.setOnLoadCallback(drawVisualization);");
-            strScript.Append(" </script>");
+
 
             string final = strScript.ToString();
 

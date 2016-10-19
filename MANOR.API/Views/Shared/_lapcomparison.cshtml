@@ -1,4 +1,5 @@
-﻿@model MANOR.API.ViewModels.LapViewModel
+﻿@using System
+@model MANOR.API.ViewModels.LapViewModel
 @{
 
     var tel1 = @Model.LapModel[0];
@@ -9,7 +10,7 @@
 
 <div class="chassis-box">
     <div class="text-left">
-        <p><span class="text-info"><b>Chasis:</b></span>@tel1.Lap.Timespan</p>
+        <p><span class="text-info"><b>Time:</b></span>@tel1.Lap.Timespan</p>
         <p><span class="text-info"><b>Chasis:</b></span>@ch1.Chassis</p>
         <p><span class="text-info"><b>Tyre Tempature:</b></span> @string.Format("{0}\u00B0C", ch1.TyreTemp)</p>
         <p><span class="text-info"><b>Fuel:</b></span> @ch1.Fuel</p>
@@ -18,7 +19,7 @@
 </div>
 <div class="chassis-box">
     <div class="text-left">
-        <p><span class="text-info"><b>Chasis:</b></span>@tel2.Lap.Timespan</p>
+        <p><span class="text-info"><b>Time:</b></span>@tel2.Lap.Timespan</p>
         <p><span class="text-info"><b>Chasis:</b></span>@ch2.Chassis</p>
         <p><span class="text-info"><b>Tyre Tempature:</b></span>@string.Format("{0}\u00B0C", ch2.TyreTemp)</p>
         <p><span class="text-info"><b>Fuel:</b></span> @ch2.Fuel</p>

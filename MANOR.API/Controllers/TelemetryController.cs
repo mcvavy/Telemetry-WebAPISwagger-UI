@@ -84,8 +84,6 @@ namespace MANOR.API.Controllers
         [ResponseType(typeof(TelemetryDto))]
         public async Task<TelemetryDto> FastestLap()
         {
-
-
             return
                 await
                     Task.FromResult(
